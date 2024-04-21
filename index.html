@@ -33,12 +33,12 @@
 					<span class="image fit"><img src="logo.png"></span>
 				</div>
 				<div class="col-8 col-7-large col-12-medium">
-					<p><strong>Would moving to Manila really make it easier to rise out of poverty?</strong></p> 
+					<h2>Would moving to Manila really make it easier to rise out of poverty?</h2> 
 					
 					<p>This has been a common thinking among people from provincial areas; but, is this actually true? Our project, <strong>Barrioline</strong>, aims to
 					assess the economic disparities between rural and urban areas and determine whether one area has a better capacity to
 					alleviate a person from poverty.</p>
-					<p>We are group Navis:</p>
+					<p> We are group Navis:</p>
 					<ul style="list-style-type:none; margin-top:-30px;">
 						<li>Cajandab, Alleenna, WFV</li>
 						<li>Go, Aisha Abigail, WFV</li>
@@ -72,9 +72,9 @@
 					<section class="box style1">
 						<span class="icon solid featured fa-camera-retro"></span>
 						<h3>Solution</h3>
-						<p>This research utilizes data science to analyze various indicators of poverty and economic disparity across the different
-						regions in the Philippines. Comparisons between different regions would be made in order to determine which region, if
-						any, best improves the chances of alleviating poverty.</p>
+						<p>Our solution is to utilize data science to analyze various indicators of poverty and economic disparity across the
+						different regions in the Philippines. Comparisons between different regions would be made in order to determine which
+						region, if any, best improves the chances of alleviating poverty.</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
@@ -93,18 +93,18 @@
 	<article id="background" class="wrapper style3">
 	<div class = "container">
 		<header><h2>Background of the Study</h2></header>
-		<h5><p>More than half of the Philippines’ 100 million people live in rural areas, and more than a third of them are poor. <sup>[1]</sup>
+		<h5><p style = "text-align: justify">More than half of the Philippines’ 100 million people live in rural areas, and more than a third of them are poor. <sup>[1]</sup>
 		The government has set an ambitious target to reduce the national poverty rate to a single digit figure by 2028 as part
 		of the administration’s broader strategy to boost economic growth and tackle socio-economic inequalities. <sup>[2]</sup></p>
 		
-		Recent data from the Philippine Statistics Authority reveals a glimmer of hope. The poverty rate dropped from 23.7% in
+		<p style = "text-align: justify">Recent data from the Philippine Statistics Authority reveals a glimmer of hope. The poverty rate dropped from 23.7% in
 		2021 to 22.4% in the first half of 2023. <sup>[2]</sup> Despite this progress, it means that roughly 25.24 million Filipinos
 		continue to live under the poverty line. To add, poverty rates have been far from uniform across the country. Urban
 		regions have a poverty incidence of 13% whereas rural areas have a much higher rate of 36%. This highlights that poverty
 		is concentrated in rural regions. <sup>[1,2]</sup> Due to this disparity, a lot of individuals from rural areas are enticed to
-		relocate to urban areas, in search of employment and belief that this is their ticket out of poverty. <sup>[3,4]</sup>
-		
-		<p>This leads us to ask: does moving to urban areas genuinely lead to better socio-economic conditions, or is this merely a
+		relocate to urban areas, in search of employment and belief that this is their ticket out of poverty. <sup>[3,4]</sup></p>
+
+		<p style = "text-align: justify">This leads us to ask: does moving to urban areas genuinely lead to better socio-economic conditions, or is this merely a
 		misconception? It prompts us to examine more closely how poverty alleviation differs between urban and rural areas in
 		the Philippines.</p></h5>
 
@@ -120,13 +120,14 @@
 	<div class = "container">
 		<header>
 			<h2>Research Questions</h2>
-			<p style = "text-align: left"><b>Research Question 1:</b> How does poverty alleviation differ between urban and rural areas in the Philippines?</p>
+			<br>
+			<h5><p style = "text-align: left"><b>Research Question 1:</b> How does poverty alleviation differ between urban and rural areas in the Philippines?</p>
 			<p style = "text-align: left"><b>Null Hypothesis:</b> Both urban and rural areas are economically stable and equally likely to alleviate poverty.</p>
 			<p style = "text-align: left"><b>Alternative Hypothesis:</b> One area is more likely to successfully alleviate poverty compared to the other.</p>
 			<br>
 			<p style = "text-align: left"><b>Research Question 2:</b> How do employment opportunities vary across the regions in the country?</p>
 			<p style = "text-align: left"><b>Null Hypothesis:</b> There is no significant difference in the employment opportunities across the regions in the Philippines.</p>
-			<p style = "text-align: left"><b>Alternative Hypothesis:</b> Employment opportunities are significantly better in urbanized areas.</p>
+			<p style = "text-align: left"><b>Alternative Hypothesis:</b> Employment opportunities are significantly better in urbanized areas.</p></h5>
 
 		</header>
 	</div>
@@ -139,6 +140,30 @@
 			<header>
 				<h2>Data Collection</h2>
 			</header>
+			<h5><p style = "text-align: justify">To address the research questions, our group collected and preprocessed data from the 2022 Annual Poverty Indicators
+			Survey (APIS) and the Labor Force Survey (LFS), which contain the latest data available regarding labor and poverty
+			indicators. In order to manage these large datasets, we sampled 1000 households from both APIS and LFS using tools such
+			as Pandas and Numpy. We also included data regarding labor and employment from the 22nd edition of the Philippine
+			Statistical Yearbook (PSY). All of these datasets are provided by the Philippine Statistics Authority (PSA).</p>
+			
+			<p style = "text-align: justify">For the first research question, the data from APIS will be used. This dataset contains nationwide indicators of poverty
+			and records of government assistance per household. First, we will determine the economic status of each household by
+			looking at the following variables: region, family size, monthly income and monthly food expenses, and urban/rural
+			status. Once a family’s economic status is determined, the government assistance received per household will be examined
+			to see if it is enough to help alleviate financial issues.</p>
+			
+			<p style = "text-align: justify">In addressing the second research question, the LFS dataset will be used. This survey is a nationwide survey of
+			households that analyzes employment status. The researchers will be focusing on the following variables: region,
+			urban/rural status, sex, age, and marital status, as well as employment-specific variables such as job status, reasons
+			for not seeking employment, and whether individuals are Overseas Filipino Workers (OFW). These variables will be used to
+			determine the effect that region has on the type of employment Filipinos have.</p>
+			
+			<p style = "text-align: justify">Aside from those mentioned, basic daily wage pay is another variable that we will be using to answer the second research
+			question. We will be using a table from the PSA OpenSTAT database entitled “Average Daily Basic Pay of Wage and Salary
+			Workers by Major Industry Group, Philippines: 2016 to January 2024 (in peso).” and “Table 9: Employed Persons by Region
+			and Major Industry Group, Philippines: 2018 to 2021” from the Philippine Statistical Yearbook. We will refer to the data
+			from 2018-2021 in order to visualize how the average daily wages and employment per industry now differs from the years
+			before.</p></h5>
 
 			<a target="_blank" href="https://docs.google.com/spreadsheets/d/1kpi2PrLIJaLPVm7VJ6tFEnqFEda5NISIAyFs22dcS04/edit?usp=sharing" class="button small scrolly">View our dataset here</a>
 
