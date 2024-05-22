@@ -164,11 +164,16 @@ html {
 
 .rq-box {
     height: fit-content;
+    width: 120%;
     padding: 30px;
     border-radius: 3rem;
     margin-left: 40px;
     margin-right: 40px;
     border: 10px solid green;
+}
+
+.rq-box p{
+    font-size:17.4px;
 }
 
 .data {
