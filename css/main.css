@@ -37,6 +37,7 @@ html {
 .references {
     text-align: center;
     color: black;
+    font-size: 17px;
 }
 
 .section-title {
@@ -69,7 +70,19 @@ html {
     height: 100vh;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    background: linear-gradient(rgba(38, 38, 38, 0.7), rgba(44, 44, 44, 0.7)), url(../images/manila.png) no-repeat;
+    background-size:cover;
+    background-position:center;
+    color: white;
+}
+
+.home-content{
+    padding: 30px;
+    background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
+    border: 3px transparent solid;
+    border-radius: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .overview {
