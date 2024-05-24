@@ -44,6 +44,21 @@ html {
     position: relative;
     padding-top: 200px;
     margin-top: -100px;
+    color: green;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button {
+    border: 10px transparent;
+    border-radius: 5rem;
+    background: green;
+    width: fit-content;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
 }
 
 .navbar a {
@@ -70,16 +85,15 @@ html {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(38, 38, 38, 0.7), rgba(44, 44, 44, 0.7)), url(../images/manila.png) no-repeat;
+    background: linear-gradient(rgba(0, 20, 3, 0.7), rgba(0, 4, 36, 0.7)), url(../images/manila.png) no-repeat;
     background-size:cover;
     background-position:center;
-    color: white;
+    color:white;
 }
 
 .home-content{
     padding: 30px;
-    background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 0.7));
-    border: 3px transparent solid;
+    border: 3px solid transparent;
     border-radius: 2rem;
     margin-left: 100px;
     margin-right: 100px;
@@ -87,12 +101,6 @@ html {
 
 .overview {
     color: black;
-}
-
-.overview h2 {
-    color: green;
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 .overview-container {
@@ -131,6 +139,7 @@ html {
     text-align: justify;
     font-size: 18px;
     color: black;
+    margin-right:15px;
 }
 
 .bx-message-rounded-check,
@@ -152,12 +161,6 @@ html {
     align-items: center;
     padding: 0 10%;
     flex-direction: column;
-}
-
-.background h2 {
-    color: green;
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 .background p {
@@ -197,12 +200,6 @@ html {
     margin-bottom: 50px;
 }
 
-.data h2 {
-    color: green;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
 .data p {
     font-size: 18px;
     text-align: justify;
@@ -210,17 +207,51 @@ html {
     line-height: 2;
 }
 
-.button {
-    border: 10px transparent;
-    border-radius: 5rem;
-    background: green;
-    width:fit-content;
-    padding: 15px;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    color:white;
+.eda{
+    margin-top: 30px;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 50px;
 }
+
+.plot-img{
+    width:800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team{
+    background: #A3D69C;
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 50px;
+    flex-direction: row;
+}
+
+.team-info{
+    text-align:center;
+    padding-bottom: 40px;
+}
+
+.team-img{
+    display:flex;
+    height:250px;
+    width:250px;
+}
+
+.footer{
+    background:rgb(1, 48, 1);
+    text-align:center;
+    color:white;
+    font-size: 20px;
+    padding:8px;
+}
+
 
 @media(max-width:1285px) {
     html {
