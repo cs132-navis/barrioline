@@ -221,6 +221,7 @@
             </div>
         </div>
         <div class="eda-container">
+            <h2 style="text-align:center;line-height:3;color:rgb(0, 63, 0)">How does poverty alleviation differ between urban and rural areas in the Philippines?</h2>
             <div class="eda-plot">
                 <img src="images/eda plots/rq1.png" class="plot-img">
                 <h3 style="text-align:center;font-size:20px;line-height:3">Research Question 1 Visualization</h3>
@@ -234,11 +235,35 @@
                 have little difference between them. For broadband internet, we notice that it is more prevalent in rural households,
                 meaning that there could be a problem with distribution in urban areas and assistance may be needed. For public
                 transportation, the graph suggests that rural areas must give more importance in giving access to public transport in
-                order to close the gap between urban and rural areas in this sector.
-</p>
+                order to close the gap between urban and rural areas in this sector.</p><br>
+                <h3> Hypothesis Testing</h3>
+                <h4 style="line-height:3">Preprocessing</h4>
+                <p>From the "2021 Family Income and Expenditure Survey of the Philippines Statistics Authority", we isolated three
+                    columns:
+                    URB, TOINC, and TOTEX. URB is whether the household surveyed is in an urban (1) or rural (2) area. TOINC is the
+                    total
+                    income (in pesos) of the household in 2021, and TOTEX is the total expenditure.</p>
+                
+                <p>Using data from "Highlights of the 2021 Full Year Official Poverty Statistics of the PSA", we see that the poverty threshold
+                    is
+                    12,030 pesos per month, or 144,360 pesos per year. Using this number, we filter out the households to those under
+                    the
+                    poverty line. Then, we checked whether the household has a higher income than expenditure (meaning that savings are
+                    increased) and store the result as a boolean in the table. The counts of this variable are what is tested for
+                    independence.</p>
+                
+                <h4 style="line-height:3">Results</h4>
+                <p>After preprocessing, we get this contingency table:</p>
+                <img src="images/rq1-table.png" width=600px class="center">
+                <p>When we perform the chi-square test of independence on this data, we get a p-value of <strong>2.3759450908147093 x 10<sup>-17</sup></strong>.
+                    This
+                    is less than the 0.05 significance level, meaning that we <strong>reject the null hypothesis and accept the alternative
+                    hypothesis. </strong></p><br>
+                <h4 style="text-align:center;font-size: 19px">Thus, <strong style="color:green">one area is more likely to successfully alleviate poverty compared to the other.</strong></h4>
             </div>
         </div>
         <div class="eda-container">
+            <h2 style="text-align:center;line-height:3;color:rgb(0, 63, 0)">How do employment opportunities vary across the regions in the country?</h2>
             <div class="eda-plot">
                 <img src="images/eda plots/rq2-main.png" class="plot-img">
                 <h3 style="text-align:center;font-size:20px;line-height:3">Research Question 2 Visualization</h3>
