@@ -170,6 +170,13 @@ html {
     line-height: 2;
 }
 
+.background h4 {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
 .rq-container {
     display: flex;
     justify-content: center;
@@ -214,11 +221,54 @@ html {
     margin-bottom: 50px;
 }
 
+.eda-details{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+.eda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .plot-img{
     width:800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border:5px solid green;
+    border-radius:1rem;
+}
+
+.subplot-img {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid green;
+    border-radius: 1rem;
+}
+
+.subplots-container{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 1;
 }
 
 .team{
@@ -251,6 +301,50 @@ html {
     font-size: 20px;
     padding:8px;
 }
+
+.w3-black{
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%)
+}
+
+.w3-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%)
+}
+
+.w3-content {
+    max-width: 980px
+}
+
+.w3-display-container {
+    position: relative
+}
+
 
 
 @media(max-width:1285px) {
