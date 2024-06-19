@@ -270,13 +270,30 @@ html {
     flex: 1;
 }
 
-.conclusion{
+.conclusion {
     margin-top: 30px;
+    display: flex;
     align-items: center;
     padding: 0 10%;
     margin-bottom: 50px;
 }
+
 .conclusion p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+.recommendation {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+.recommendation p {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 2rem;
