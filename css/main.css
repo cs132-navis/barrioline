@@ -366,6 +366,12 @@ html {
     -ms-transform: translate(0%, -50%)
 }
 
+.images-container {
+    display: flex;         
+    justify-content: center;
+    align-items: center;   
+}
+
 .w3-content {
     max-width: 980px
 }
