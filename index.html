@@ -297,6 +297,41 @@
                         the
                         employment opportunities that are available for respective industries in different regions.</p>
                 </div>
+                <div class="eda-details">
+                    <h3> Hypothesis Testing</h3>
+                    <h4 style="line-height:3">Preprocessing</h4>
+                    <p> With the data taken from Table 11.9 of the yearbook, we first grouped the regions by their respective island 
+                        groups Luzon, Visayas, and Mindanao to make the visualization less dense. We also limited our observations 
+                        to the most recent data available in 2021. The decision was also made to exclude industries that have only one 
+                        or no employees listed in the table. </p>
+                    <h4 style="line-height:3">Results</h4>
+                    <img src="images/rq2-table.png" width=600px class="center">
+                    <p> For this dataset, we deemed it best to use ANOVA for the analysis. We checked the ANOVA for each individual region, 
+                        and then checked the summary of the model. The results show an overall model p value of 7.76e-36 (7.76 x 10^-36), 
+                        which is indicative of an extremely low probability of the null hypothesis being true. The value is much lower than 
+                        the significance level of 0.05, meaning that we reject the null hypothesis and accept the alternative hypothesis. <br>
+                        
+                        This confirms that there is a significant difference in the availability of employment opportunities in each region. 
+                        This follows the typical idea of people moving from the provinces to urban areas to seek better job opportunities, 
+                        either because of the abundance of slots or the diversity of the industries. These opportunities are also likely to 
+                        provide better pay. From the dataset, the industries with the highest average daily wages are: Information and 
+                        Communication, Professional, Scientific and Technical Activities, and Education, with wages ranging from Php 800-900. 
+                        Looking at the bar plots, it's easy to tell that these aforementioned industries are largely dominated by employees 
+                        within Luzon, concentrated around the urban regions of the island. It's possible that these higher-paying industries 
+                        may not have as many branches or institutions in rural regions, and therefore would not have as many slots open for 
+                        employees. <br>
+
+                        It is clear that urbanized areas, particularly the regions located in Luzon, have more employment opportunities 
+                        available to them. Major industries generally favor these areas because of their higher population, and thus bigger 
+                        workforce. However, we cannot decisively conclude that more opportunities means better chances of poverty alleviation 
+                        from this alone. There are far too many factors to consider in this discussion. one of them being the cost of living. 
+                        The cost can differ wildly depending on the region they live in and the necessities their jobs demand. Further testing 
+                        is a must before any solid conclusions can be made. <br>
+                   
+                    </p>
+                </div>                
+
+                
             </div>
            
             <div class="eda-details" id="machine">
